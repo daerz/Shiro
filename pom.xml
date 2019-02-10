@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.daerz.maven</groupId>
+  <artifactId>ShiroSpringMVCT</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>ShiroSpringMVCT</name>
+  <properties>
+		<!--设置maven的编码集，默认时候gbk-->
+		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+		<spring.version>4.2.2.RELEASE</spring.version>
+		<shiro.version>1.2.4</shiro.version>
+  </properties>
+  <dependencies>
+  <!-- springMVC依赖 -->
+  		<dependency>
+	      <groupId>org.springframework</groupId>
+	      <artifactId>spring-web</artifactId>
+	      <version>${spring.version}</version>
+	    </dependency>
+	    
+	    <dependency>
+	      <groupId>org.springframework</groupId>
+	      <artifactId>spring-webmvc</artifactId>
+	      <version>${spring.version}</version>
+	    </dependency>
+	    
+	    <dependency>
+	      <groupId>org.springframework</groupId>
+	      <artifactId>spring-orm</artifactId>
+	      <version>${spring.version}</version>
+	    </dependency>
+	    
+  <!-- shiro依赖 -->
+  		<dependency>
+  		  <groupId>org.apache.shiro</groupId>
+	      <artifactId>shiro-core</artifactId>
+	      <version>${shiro.version}</version>
+  		</dependency>
+  		
+  		<dependency>
+  		  <groupId>org.apache.shiro</groupId>
+	      <artifactId>shiro-web</artifactId>
+	      <version>${shiro.version}</version>
+  		</dependency>
+  		
+  		<dependency>
+  		  <groupId>org.apache.shiro</groupId>
+	      <artifactId>shiro-spring</artifactId>
+	      <version>${shiro.version}</version>
+  		</dependency>
+  		
+  		<dependency>
+  		  <groupId>org.apache.shiro</groupId>
+	      <artifactId>shiro-ehcache</artifactId>
+	      <version>${shiro.version}</version>
+  		</dependency>
+  		
+  		<!-- shiro需要的日志包 -->
+  		<dependency>
+  		  <groupId>org.slf4j</groupId>
+	      <artifactId>jcl-over-slf4j</artifactId>
+	      <version>1.6.4</version>
+	      <scope>runtime</scope>
+  		</dependency>
+  		<dependency>
+  		  <groupId>org.slf4j</groupId>
+	      <artifactId>slf4j-log4j12</artifactId>
+	      <version>1.6.4</version>
+	      <scope>runtime</scope>
+  		</dependency>
+  		<dependency>
+  		  <groupId>log4j</groupId>
+	      <artifactId>log4j</artifactId>
+	      <version>1.2.16</version>
+	      <scope>runtime</scope>
+  		</dependency>
+  </dependencies>
+</project>
